@@ -22,10 +22,12 @@ shinyUI(navbarPage(" ",
   tabPanel(">Application",
     headerPanel("Welcome to the sentence reversal and analysis app!"),
     mainPanel(
-      strong("Enter a sentence in the text area below:"),
+      strong("Enter a sentence in the text area:"),
+      p(""),
       tags$textarea(id="sentence", rows=3, cols=40, label = "Enter a sentence"),
       tags$head(tags$style(type="text/css", "#sentence {width: 500px}")),
-      
+      p(""),
+      p(""),
       actionButton("goButton", "Reverse Sentence"),
 
       p(""),
